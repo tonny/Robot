@@ -22,11 +22,12 @@ public class Robot{
 		if(map.get(posy)[posx]=='L'){
 			return "";
 		}
+		if(map.get(posy)[posx]=='*' || map.get(posy)[posx] == 'p' ){
+			/*TODO we need to verificate if we can move the rock*/
+			return "";
+		}
 		else{
-			if(map.get(posy)[posx]=='*'){
-				/*TODO we need to verificate if we can move the rock*/
-				return "";
-			}
+			
 			map.get(posy)[posx]='p';
 			String L = "L"+mover(map,posy,posx-1,maxy,maxx);
 			String R = "R"+mover(map,posy,posx+1,maxy,maxx);
