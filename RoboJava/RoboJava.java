@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Queue;
 
 public class RoboJava{
 	public static void imprimir(ArrayList<char[]>map){
@@ -16,6 +17,7 @@ public class RoboJava{
     	Scanner sc = new Scanner(System.in);
     	String line= "";
     	ArrayList<char[]> map = new ArrayList<char[]>();
+    	
     	int posx=0, posy=0, y=0, maxx=0, maxy=0;
     	while(sc.hasNext()){
     		line=sc.nextLine();
@@ -35,6 +37,5 @@ public class RoboJava{
     	System.out.println("y= "+posy+" x= "+posx);
     	System.out.println("my= "+maxy+" mx= "+maxx);
     	imprimir(map);
-    	//System.out.println(mover(map, posy, posx, maxy-1, maxx-1));
     }
 }
